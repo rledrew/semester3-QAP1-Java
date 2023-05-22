@@ -9,6 +9,10 @@ public class Time {
         this.second = second;
     }
 
+    public Time() {
+       this(0, 0, 0);
+    }
+
     public Time addTime(int hour, int minute, int second) {
         int newHour = this.hour + hour;
         int newMinute = this.minute + minute;
